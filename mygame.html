@@ -1,0 +1,178 @@
+<!DOCTYPE html> 
+<html>
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Загадки </title>
+<p class="rig"> Угадайте три загадки </p>
+    <style>
+	.how {
+	font-size: 40px;
+	color: #DC143C;
+	}
+	.rig {
+	font-size: 50px;
+	
+	}
+	h1, h4, h6 {
+font-size: 25px;
+color: #FF0000	
+	}
+      html {
+	  text-align: center;
+	  font-style: italic;
+        font-family: sans-serif;
+		background-color: #7FFFD4;
+      }
+      body {
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;
+      }
+      .lastResult {
+        color: red;
+        padding: 3px;
+      }
+	  .guessSubmit, .guessSubmit2, .guessSubmit3 {
+	  border: 4px dotted #FFFAFA ;
+	 background-color: #FF8C00;
+	 border-radius: 20px;
+}
+	  }
+	  p {
+	 color: 	 #F08080;
+	 }
+    </style>
+  </head>
+
+  <body>
+
+  <p class="ryg">Сырым не едят, вареным выбрасывают. Что это? </p>
+
+	<div class="form">
+      <label for="guessField">Введите ответ: </label><input type="text" id="guessField" class="guessField">
+      <input type="submit" value="Ответить" class="guessSubmit">
+	  <h1 class="rep"></h1>
+	  <p class="rap"></p>
+
+	  <h2 class="rag"></h2>
+	  <h3 class="now"></h3>
+	  <p class="hid"> Джордж Вашингтон, Шерлок Холмс, Вильям Шекспир, Людвиг Ван Бетховен, Наполеон Бонапарт и Нерон - кто из них принципиально отличается от других?</p>    
+	  <label for="guessField">Введите ответ: </label><input type="text" id="guessField" class="guessField2">
+      <input type="submit" value="Ответить" class="guessSubmit2">
+	  <h4 class="ti"></h4>
+	  <h5 class="ky"></h5>
+	  <p calss="up">Без работы висит, при работе стоит, после работы — мокрый.</p>
+	  <label for="guessField">Введите ответ: </label><input type="text" id="guessField" class="guessField3">
+      <input type="submit" value="Ответить" class="guessSubmit3">
+	  <h6 class="it"></h6>
+	  <h7 class="yk"></h7>
+
+	  <h8 class="kk"></h8>
+	  <h9 class="ok"></h8>
+	  <p class="how"></p>
+	  <script>
+	  
+	 var my2V=document.querySelector(".rig")
+var myV=document.querySelector(".how")
+var but1=document.querySelector(".guessSubmit")
+var fie1=document.querySelector(".guessField")
+var my3V=5
+myV.textContent="У вас "+my3V+" попыток "
+var my4V=document.querySelector(".rep")
+var otvet="Лед"
+but1.onclick=function()
+{
+if(fie1.value==="Лавровый лист" || fie1.value==="лавровый лист")
+{
+my4V.textContent="Вы отгадали "
+but1.disabled=true
+}
+else
+{
+my4V.textContent="Вы ввели неправильный ответ "
+my3V=my3V-1
+myV.textContent="У вас "+my3V+" попытки"
+}
+if (my3V===0)
+{
+my4V.textContent="Вы проиграли"
+but1.disabled=true
+but3.disabled=true
+Var.disabled=true
+}
+}
+var but3=document.querySelector(".guessSubmit2")
+var myG=document.querySelector(".hid")
+var fie3=document.querySelector(".guessField2")
+var my4G=document.querySelector(".ti")
+var my6G=document.querySelector(".ky")
+var otvet3="Шерлок Холмс"
+but3.onclick=function()
+{
+if(fie3.value==="Шерлок Холмс")
+{
+my4G.textContent="Вы отгадали "
+
+but3.disabled=true
+
+}
+else 
+{
+my4G.textContent="Вы ввели неправильный ответ "
+my3V=my3V-1
+myV.textContent="У вас "+my3V+" попытки"
+}
+if (my3V===0)
+{
+my4V.textContent="Вы проиграли"
+but1.disabled=true
+but3.disabled=true
+Var.disabled=true
+}
+}
+var Var=document.querySelector(".guessSubmit3")
+var Var2=document.querySelector(".guessField3")
+var Var3=document.querySelector(".it")
+var Var4=document.querySelector(".yk")
+var otvet4="Зонт"
+Var.onclick=function()
+{
+if (Var2.value==="Зонт"||Var2.value==="зонт"||Var2.value==="зонтик"||Var2.value==="Зонтик")
+{
+Var3.textContent="Вы отгадали "
+
+Var.disabled=true
+}
+else
+{
+Var3.textContent="Вы ввели неправильный ответ"
+my3V=my3V-1
+myV.textContent="У вас "+my3V+" попытки"
+}
+if (my3V===0)
+{
+my4V.textContent="Вы проиграли"
+but1.disabled=true
+but3.disabled=true
+Var.disabled=true
+}
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</body>
+	</html> 
