@@ -1,0 +1,306 @@
+.artnam {
+	font-size: 30px;
+	
+ background: linear-gradient(80deg, #BC1267 , #32CD32 , #FF8C00 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  
+  border: 3px solid transparent;
+  border-image: linear-gradient(80deg, #BC1267 , #32CD32 , #FF8C00 );
+  border-image-slice: 1;
+  padding: 20px;
+ 
+  font-family: arial;
+ 
+
+}
+
+
+/* делаем grid */
+/*body { 
+	display: grid;
+	grid-template-areas:
+	"name name name name"
+	"albums albums albums albums"
+	"albna albna albna albna";
+	grid-template-rows: 120px 180px 30px;
+	grid-template-columns: 25% 25% 25% 25%; 	
+	grid-column-gap: 5px;
+	row-gap: 70px; 
+    height: 100vh;
+ 
+ justify-items: center;
+ 
+}
+
+
+ исполнитель grid
+#name {
+	grid-area: name;
+	
+}
+
+/* обложка grid
+#cover {
+grid-area: albums;	
+
+
+}
+#albname {
+	grid-area: albna;
+}
+
+/* обложка стиль 
+.alb {
+	font-size: 20px;
+	
+	
+}
+
+	
+
+
+/* текст под обложкой 
+.desc {
+	max-width:140px;
+	text-align: center;
+	text-decoration: none;
+
+	
+}
+.desc:hover {
+	text-decoration: underline;
+	
+
+} /*
+
+/* цвета текста под обложкой*/
+
+
+
+.setka {
+	display: grid;
+
+	grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 100px 290px 300px  30% 300px;
+	row-gap: 20px;
+	
+}
+
+
+.navigation {
+	display: grid;
+	grid-column:1/5;
+	justify-items: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: border;
+	background: linear-gradient(  #ADFF2F, #FFD700);
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  
+}
+.anavigation {
+	 	
+	 text-decoration: underline;
+	 color:#FF1493;
+}
+.anavigation:hover {
+	 	
+	 text-decoration: none;
+	 font-weight:bolder;
+}
+
+.artnam {
+	grid-column:1/5;
+	margin-top: 80px;
+	justify-self: center;
+    max-height: 30px;    /* работает но надо получше написать*/
+}
+
+/* надо сделать класс для ссылки а */
+a {
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+.grpurp {
+background: linear-gradient(45deg, #C71585 33%, #C71585 66%, #8AA9D6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  
+  
+  }
+  .grad {
+ background: linear-gradient(45deg, #31D84D 33%, #31D84D 66%, #8AA9D6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.yell {
+color: #FF8C00;
+text-decoration:  none;
+
+}
+
+
+.desc {
+	
+justify-self:center;
+	
+	
+}
+:root{ 
+--transitionn: 40px;
+}
+
+
+
+	
+.purp {
+color: purple;
+text-decoration: none;
+}
+
+
+	
+
+/*imag/vsworld.jpg lilcoverpl imag/perluv.png lilcovervw */
+
+
+  .cover{
+  
+    width: 140px; /* Ширина рисунка */
+    height: 140px; 
+
+	
+	
+   }
+   .desc:hover {
+	   transition-duration: .3s ;
+	transform: scale(1.1);
+   }
+    .cover:hover .name {
+		
+	   transition-duration: .3s ;
+	transform: scale(1.1)  ;
+	
+	 
+   }
+     .name{
+	padding-top: 10px;
+	text-align: center;
+	max-width: 140px;
+	
+	 }
+	 .name:hover {
+		 
+		 font-weight: bolder;
+	 }
+
+   
+  .urltitlename:hover {
+	 font-weight: bolder;
+	  
+	  
+  }
+  
+  .lilcoveret {
+	   background: url(imag/eternal.jpg);
+   }
+   .lilcoveret:hover {
+	   background: url(imag/bluret.png);
+   }
+   
+   .lilcoverlr {
+	   background: url(imag/rage2.png);
+   }
+   .lilcoverlr:hover {
+	   background: url(imag/blurrage.jpg);
+	   
+	   
+   }
+   .lilcoverpl {
+       background: url(imag/perluv.png)
+   }	   
+   .lilcoverpl:hover {
+       background: url(imag/blurluv.jpg)
+   }	   
+   
+   .lilcovervw {
+	   background: url(imag/vsworld.jpg)
+   }
+    .lilcovervw:hover {
+	   background: url(imag/blurvs.jpg)
+   }
+   
+   
+   /*most popular songs style*/
+   li {
+	   margin-top: 10px;
+	   padding-left: 10px;
+	  
+   }
+   /* style for spisok общий для двоих */
+   .spisokstyle {
+	   background: linear-gradient(80deg, #BC1267 , #32CD32 , #FF8C00 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  
+  border: 3px solid transparent;
+  border-image: linear-gradient(80deg, #BC1267 , #32CD32 , #FF8C00 );
+  border-image-slice: 1;
+  font-style: italic;
+  font-weight: bolder;
+	    padding-bottom: 30px;
+   }
+   
+   /* определение положения списков разный код*/
+.podspisok {
+	
+	grid-column: 1/5;
+	justify-self: start; 
+	font-weight: bolder;
+	font-size: 28px;
+	padding-left: 5%;
+	margin-bottom: 50px;
+	text-align:start;
+}
+   .review {
+	   grid-column:4/4;
+	   text-align: center;
+	   font-style: italic;
+	   font-size: 17px;
+	    
+   }
+   .divcomm{
+	 border: 10px solid transparent;
+border-image: 10 repeating-linear-gradient(45deg, #BC1267, #BC1267 10px, transparent 10px, transparent 20px, #32CD32 20px, #32CD32 30px,transparent 30px, transparent 40px);
+	   padding: 13px;
+	   color: #FF8C00;
+   }
+   .comm {
+	   
+	   text-decoration: underline;
+	   color: #FF8C00;
+   }
+   .comm:hover {
+	font-weight: bolder;   
+   }
+   .award {
+	   grid-column: 3/5;
+	   align-content: start;
+	  
+   }
+   
+  </style>
+ </head>
+
+
